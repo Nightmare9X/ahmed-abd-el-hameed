@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Counter</title>
+</head>
+<body>
+    <h1>Interactive Counter</h1>
+    <div id="counter"></div>
+
+    <script>
+        const input = prompt("Enter a number to count up to:");
+        if (input === null || input.trim() === "" || isNaN(input)) {
+            alert("have some braincells and enter a valid number.");
+        } else {
+            const number = parseInt(input);
+            const outputDiv = document.getElementById('output');
+            for (let i = 1; i <= number; i++) {
+                outputDiv.innerHTML += i + "<br>";
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>

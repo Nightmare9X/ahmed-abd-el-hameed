@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Identity Confirmation</title>
+</head>
+<body>
+   <script>
+    
+        const Name = prompt('Please enter your name:');
+        if (Name === null || Name.trim() === '') {
+            alert('No name entered. you ain\'t leaving lil bro ');
+        } else {
+            if (confirm('Are you sure your name is ' + Name + '?')) {
+                alert(`Welcome, ${Name}!`);
+            }
+        }
+   </script>
+</body>
+</html>

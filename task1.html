@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+</head>
+<body>
+    <script>
+        var user = confirm ("wanna use my exclusive calculator for only 1k$?");
+        if (!user){alert("leaving isn't an opetion lil bro . it never was")}
+        do {
+            var numberOne = parseFloat(prompt("enter the first number"));
+            var numberTwo = parseFloat(prompt("enter the second number"));
+        } while (isNaN(numberOne) || isNaN(numberTwo));
+
+        var operation = prompt("enter the operation");
+        switch (operation) {
+            case "+":
+                alert(numberOne + numberTwo);
+                break;
+            case "-":
+                alert(numberOne - numberTwo);
+                break;
+            case "*":
+                alert(numberOne * numberTwo);
+                break;
+            case "/":
+                if (numberTwo !== 0) {
+                    alert(numberOne / numberTwo);
+                } else {
+                    alert("cannot divide by zero obviously");
+                }
+                break;
+            default:
+                alert("enter a proper operation");
+        }
+  
+    </script>
+</body>
+</html>
